@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css animation test</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box">
+		<div class="click">Click</div>
+
+	</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$click = $('.click');
+
+			$click.click( function() {
+				$('.box').addClass('hidden');
+			});
+		});
+	</script>
+</body>
+</html>
